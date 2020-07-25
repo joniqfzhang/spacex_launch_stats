@@ -11,12 +11,12 @@ import Launch from './components/Launch';
 import './App.css';
 import logo from './logo.PNG';
 
-const link = new HttpLink({
-  uri: 'http://localhost:5000/graphql',
-});
 // const link = new HttpLink({
-//   uri: '/graphql',
+//   uri: 'http://localhost:5000/graphql',
 // });
+const link = new HttpLink({
+  uri: '/graphql',
+});
 
 const client = new ApolloClient({
   link,
